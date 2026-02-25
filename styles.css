@@ -206,3 +206,122 @@ footer p {
     background-color: #1565c0;
     transform: scale(1.05);
 }
+
+/* para la pagina de los eventos */
+.eventsContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px;
+}
+
+.eventCard {
+    display: flex;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eventCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.eventCard img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    align-items: stretch;
+}
+
+.eventInfo {
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eventCard h2 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.eventCard p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 300;
+}
+
+.eventDate {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* para la pagina de los contactos */
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.contactCard {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contactCard h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.contactCard p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contactBtn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contactBtn.whatsapp {
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+
+.contactBtn.instagram {
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+
+.contactBtn.facebook {
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
